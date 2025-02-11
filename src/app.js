@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", (e) => {
         icon: "success",
       });
 
-      target.innerText = `Bonjour voici les infos saisies :  
-                ${inputName.value}, ${inputLastName.value}, ${age.value} ans`;
+        target.innerText = `Bonjour voici les infos saisies :  
+        ${inputName.value}, ${inputLastName.value}, ${age.value} ans`;
+        
     } else {
       Swal.fire({
         icon: "error",
