@@ -69,10 +69,18 @@ form{
         cursor: pointer;
         margin: auto;
         padding: 1rem 4rem;
+        box-shadow: none;
         
     }
    
 }
+
+/* .msg{
+    display: none;
+}
+.appear{
+    display: block;
+} */
 
 footer *{
     text-align: center;

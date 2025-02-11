@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Formulaire de contact">
     <title>Formulaire de contact</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <header>
+    <header> 
         <h1>
             Inscription en ligne
         </h1>
@@ -18,19 +19,20 @@
             <img src="./asset/cover.svg" alt="cover" loading="lazy">
         </div>
         
+
        <div class="form-primary" role="region" aria-labelledby="form">
-
+        <p class="msg"></p>
         <fieldset>
-            <legend>Remplir le formaulaire</legend>
+            <legend>Remplir le formulaire</legend>
 
-            <form action="" method="get"><!-- POST | GET | PUT --> 
+            <form action="" method="post"><!-- POST | GET | PUT --> 
                 <label for="nom">Votre nom</label>
                 <input 
                 type="text" 
                 name="nom" 
                 id="nom" 
                 placeholder="Nom" 
-                required aria-required="true" autofocus>
+                 aria-required="true" autofocus>
 
                 <label for="prenom">Votre prénom</label>
                 <input 
@@ -38,11 +40,11 @@
                 name="prenom" 
                 id="prenom" 
                 placeholder="Prénom" 
-                required aria-required="true">
+                 aria-required="true">
 
                 <label for="age">Votre age</label>
                 <input type="number" name="age" id="age" min="16" max="100"
-                placeholder="Age" required aria-required="true">
+                placeholder="Age"  aria-required="true">
 
 
                 <input type="submit" value="Envoyer le formulaire">
@@ -57,6 +59,7 @@
             &copy; - MIT - 2025
         </p>
     </footer>
+    <script src="./src/app.js"></script>
     
 </body>
 </html>
