@@ -27,7 +27,16 @@ document.addEventListener("DOMContentLoaded", (e) => {
         this.target.classList.remove("error");
         this.target.classList.add("appear");
         this.target.innerText = `Bonjour voici les infos saisies : ${this.inputName.value}, ${this.inputLastName.value}, ${this.age.value} ans`;
-        document.location.assign("dashboard.html")
+        const intervalId = setInterval(() => {
+            console.log("executer");
+          
+            // Vous pouvez ajouter ici toute logique que vous souhaitez exécuter à intervalles réguliers
+      
+            // Arrêter l'intervalle et rediriger après un certain nombre d'exécutions ou une condition
+            clearInterval(intervalId);
+            document.location.assign("dashboard.html");
+          }, 4000);
+        
       } else {
         Swal.fire({
           icon: "error",
