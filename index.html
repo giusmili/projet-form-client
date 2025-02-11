@@ -19,14 +19,27 @@
         <fieldset>
             <legend>Remplir le formaulaire</legend>
 
-            <form action="https://www.google.com/search" method="get"><!-- POST | GET | PUT --> 
+            <form action="" method="get"><!-- POST | GET | PUT --> 
                 <label for="nom">Votre nom</label>
                 <input 
                 type="text" 
-                name="q" 
+                name="nom" 
                 id="nom" 
                 placeholder="Votre nom" 
                 required aria-required="true" autofocus>
+
+                <label for="prenom">Votre prénom</label>
+                <input 
+                type="text" 
+                name="prenom" 
+                id="prenom" 
+                placeholder="Votre prénom" 
+                required aria-required="true">
+
+                <label for="age">Votre age</label>
+                <input type="number" name="age" id="age" min="16" max="100"
+                placeholder="Votre age" required aria-required="true">
+
 
                 <input type="submit" value="Envoyer le formulaire">
             </form>
