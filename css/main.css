@@ -31,7 +31,10 @@ fieldset{
         padding: .5rem;
     }
 }
-
+.picture{
+    max-width: 40rem;
+    margin: 2rem auto 0;
+}
 form{
    
     input{
