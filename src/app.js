@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   btn_submit.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if (inputName.value && inputLastName.value && age.value && age.value >= 16 ) {
+    if (inputName.value && inputLastName.value && age.value && age.value >= 16 && !isNaN(age.value)) {
       Swal.fire({
         title: "Good job!",
         text: "You clicked the button!",
