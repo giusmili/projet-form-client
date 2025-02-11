@@ -73,3 +73,8 @@ form{
     }
    
 }
+
+footer *{
+    text-align: center;
+    color: #797676;
+}
